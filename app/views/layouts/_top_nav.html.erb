@@ -26,7 +26,7 @@
           </ul>
         </li>
         <% if current_user %>
-          <li><p class="user-name">Signed in as <%= current_user.name %></p></li>
+          <li><p class="user-name">Signed in as <%= current_user.name %> <%= current_user.lastname%></p></li>
           <li><%= link_to "Logout", '/logout' %></li>
         <% else %>
           <li><%= link_to "Login", '/login' %></li>
