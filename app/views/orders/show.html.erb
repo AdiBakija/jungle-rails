@@ -26,7 +26,7 @@
               TOTAL:
             </th>
             <th>
-              $<%= @order.total %>
+              <%= humanized_money_with_symbol @order.total %>
             </th>
           </tr>
           <tr>
