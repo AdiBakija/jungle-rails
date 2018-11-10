@@ -6,4 +6,8 @@ class Review < ActiveRecord::Base
    validates :user_id, presence: true
    validates :description, presence: true
    validates :rating, presence: true
+
+   def blank_stars
+    5 - rating.to_i
+   end
 end

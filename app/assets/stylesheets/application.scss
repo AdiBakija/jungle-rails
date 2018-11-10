@@ -16,6 +16,25 @@ body {
   color: #777;
 }
 
+.review {
+  border: solid 1px grey;
+  border-radius: 0.5em;
+}
+
+.review-header {
+  padding: 0.5em;
+  border-bottom: solid 1px grey;
+}
+
+.review-body {
+  padding: 0.5em;
+  border-bottom: solid 1px grey;
+}
+
+.review-footer {
+  padding: 0.5em;
+}
+
 // Bootstrap adjustments
 form.button_to {
   display: inline;
