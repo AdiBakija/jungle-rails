@@ -33,7 +33,7 @@ RSpec.describe Product, type: :model do
       @category = Category.new(name: 'Drinks')
       @product = Product.new(name: 'Water',price: 1000,quantity: 4,category: @category)
 
-      expect(@product.price).to be_valid
+      expect(@product).to be_valid
     end
 
     it 'should have a quantity' do
