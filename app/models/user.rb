@@ -20,6 +20,7 @@ before_validation :email_validation
 
   def self.authenticate_with_credentials(email, password)
     user = User.find_by_email(email)
+    user.authenticate(password)
   end
 
 end
